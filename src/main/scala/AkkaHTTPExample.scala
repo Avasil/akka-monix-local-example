@@ -7,6 +7,7 @@ import akka.http.scaladsl.server._
 import com.typesafe.scalalogging.StrictLogging
 import monix.eval.Task
 import monix.execution.Scheduler
+import monix.mdc.MonixMDCAdapter
 import org.slf4j.MDC
 
 import scala.compat.java8.OptionConverters._
@@ -16,6 +17,7 @@ import scala.util.{Random, Try}
 
 object AkkaHTTPExample extends App with StrictLogging {
   MonixMDCAdapter.initialize()
+
   implicit val actorSystem: ActorSystem = ActorSystem()
   implicit val scheduler: Scheduler     = Scheduler.traced
 
