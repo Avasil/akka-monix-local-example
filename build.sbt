@@ -1,7 +1,7 @@
 val monixVersion      = "3.3.0"
 val akkaHttpVersion   = "10.1.11"
 val akkaStreamVersion = "2.6.3"
-val monixMdcVersion   = "0.0.0+6-ceadedfc-SNAPSHOT"
+val monixMdcVersion   = "0.1.8"
 
 scalaVersion := "2.13.3"
 resolvers += Resolver.mavenLocal
